@@ -23,7 +23,7 @@ h2 {
 
 h3 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.2em;
+	font-size: 1.6em;
 	font-weight: 400;
 }
 
@@ -47,9 +47,11 @@ header {
 	z-index: 2;
 }
 
-header h3 {
+header p {
 	color: #fff;
 	float: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.2em;
 	font-weight: 800;
 	margin: 15px 0 0 120px;
 	width: auto;
@@ -111,19 +113,21 @@ header nav li:hover a {
 /* ------ about section starts here ------ */
 
 .about {
-	height: 600px;
-	position: relative;
+	height: 100%;
+	width: 100%;
 }
 
 .about::after {
 	content: "";
-	background: url("images/bg-image.jpg") no-repeat;
+	background: url("https://cecastosic.github.io/images/bg-image.jpg") no-repeat;
 	background-size: cover;
+	height: 100%;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
 	position: absolute;
+	width: 100%;
 	z-index: -1;
 }
 
@@ -186,7 +190,7 @@ header nav li:hover a {
 }
 
 .about .about-data {
-	margin: 20px 20px 10px 550px;
+	padding: 40px 20px 10px 42%;
 }
 
 .about .about-data address {
@@ -254,7 +258,7 @@ header nav li:hover a {
 }
 
 .about .about-info {
-	margin: 0 20px 20px 550px;
+	padding: 0 20px 20px 42%;
 }
 
 
@@ -268,7 +272,7 @@ header nav li:hover a {
 	width: 100%;
 }
 
-.skills h2 {
+.skills h3 {
 	color: #fff;
 	margin-bottom: 40px;
 }
@@ -277,7 +281,7 @@ header nav li:hover a {
 	background: #F95454;
 }
 
-.skills:hover h2 {
+.skills:hover h3 {
 	color: #fff;
 	text-shadow: 1px 1px 2px #333;
 }
@@ -303,6 +307,7 @@ header nav li:hover a {
 	background: #f2f2f2;
 	border-radius: 5px;
 	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+	list-style: none;
 	margin: auto auto 15px;
 	padding: 10px;
 	width: 20%;
@@ -323,7 +328,7 @@ header nav li:hover a {
 	width: 100%;
 }
 
-.projects:hover h2 {
+.projects:hover h3 {
 	color: #40C7E7;
 	text-shadow: 0 0 1px #666;
 }
@@ -337,7 +342,7 @@ header nav li:hover a {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 20px;
-	padding: 20px 150px;
+	padding: 20px 20%;
 }
 
 .projects .project-container .project {
@@ -346,6 +351,7 @@ header nav li:hover a {
 	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15);
 	margin: auto auto 15px;
 	height: 150px;
+	list-style: none;
 	overflow: hidden;
 	padding: 0;
 	position: relative;
@@ -407,33 +413,37 @@ footer nav {
 	float: left;
 	margin-left: 50px;
 	text-transform: uppercase;
-	;
 }
 
-footer nav a {
+footer nav li {
+	float: left;
+	list-style: none;
+}
+
+footer nav li a {
 	color: #fff;
 	font-size: 0.9em;
 	margin-right: 10px;
 	text-decoration: none;
 }
 
-footer nav a:first-child:hover {
+footer nav li:first-child a:hover {
 	color: #f9ca1a;
 }
 
-footer nav a:nth-child(2):hover {
+footer nav li:nth-child(2) a:hover {
 	color: #F95454;
 }
 
-footer nav a:nth-child(3):hover {
+footer nav li:nth-child(3) a:hover {
 	color: #40C7E7;
 }
 
-footer nav a:nth-child(4):hover {
+footer nav li:nth-child(4) a:hover {
 	color: #74D793;
 }
 
-footer h2 {
+footer h3 {
 	margin-top: 20px;
 }
 
@@ -476,14 +486,14 @@ footer .go-up a:hover {
 		font-size: 1.8em;
 	}
 	h3 {
-		font-size: 1.3em;
+		font-size: 1.8em;
 	}
 	h4 {
 		font-size: 1.2em;
 	}
 	.about .about-data,
 	.about .about-info {
-		margin: 20px 20px 10px 350px;
+		padding: 20px 20px 10px 30%;
 		float: left;
 		width: 40%;
 	}
@@ -504,7 +514,7 @@ footer .go-up a:hover {
 	.container {
 		padding-top: 100px;
 	}
-	header h3 {
+	header p {
 		float: left;
 	}
 	header nav {
@@ -513,12 +523,15 @@ footer .go-up a:hover {
 	header nav li {
 		float: left;
 	}
+	.about{
+		height: auto;
+	}
 	.about::after {
 		opacity: 0.2;
 	}
 	.about .about-data,
 	.about .about-info {
-		margin: 20px 20px 10px 100px;
+		padding: 20px 20px 10px 10%;
 	}
 	.about::after {
 		opacity: 0.6;
@@ -538,7 +551,7 @@ footer .go-up a:hover {
 		position: absolute;
 		width: 100%;
 	}
-	header h3 {
+	header p {
 		float: none;
 		text-align: center;
 		margin-left: 0;
@@ -558,7 +571,6 @@ footer .go-up a:hover {
 		padding-top: 205px;
 	}
 	.about {
-		height: auto;
 		text-align: center;
 	}
 	.about::after {
@@ -571,7 +583,7 @@ footer .go-up a:hover {
 	}
 	.about .about-data,
 	.about .about-info {
-		margin: 20px 20px 10px 10px;
+		padding: 20px 20px 10px 10px;
 		float: none;
 		width: 90%;
 	}
@@ -597,14 +609,20 @@ footer .go-up a:hover {
 		width: 100%;
 	}
 	footer nav {
+		clear: both;
 		float: none;
+		font-size: 1.1em;
 		margin: 10px;
+		padding: 10px;
+		width: 100%;
+	}
+	footer nav li {
+		width: 23%;
 	}
 	footer p {
-		float: none;
-		margin-left: 10px;
+		margin: 10px 0;
 		text-align: center;
-		width: 90%;
+		width: 100%;
 	}
 	footer .go-up a {
 		left: 42%;
