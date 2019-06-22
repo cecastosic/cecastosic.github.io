@@ -541,6 +541,9 @@ footer .go-up a:hover {
 		opacity: 0.6;
 		filter: blur(4px);
 	}
+	.projects .overlay-project {
+		display: none;
+	}
 }
 
 
@@ -598,8 +601,7 @@ footer .go-up a:hover {
 		padding: 20px 40px;
 	}
 	.projects .overlay-project {
-		height: 100%;
-		width: 100%;
+		display: none;
 	}
 	.projects .project-container .project {
 		width: 90%;
